@@ -1,0 +1,142 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [
+    {
+      "command": "duplicateTab",
+      "keys": "ctrl+shift+d"
+    },
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": {
+        "action": "prevTab"
+      },
+      "keys": "ctrl+shift+tab"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": "closePane",
+      "keys": "ctrl+shift+w"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "command": {
+        "action": "nextTab"
+      },
+      "keys": "ctrl+tab"
+    },
+    {
+      "command": {
+        "action": "newTab"
+      },
+      "keys": "ctrl+t"
+    },
+    {
+      "command": "tabSearch",
+      "keys": "ctrl+p"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    },
+    {
+      "command": {
+        "action": "newWindow"
+      },
+      "keys": "ctrl+shift+n"
+    }
+  ],
+  "copyFormatting": "none",
+  "copyOnSelect": true,
+  "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+  "initialCols": 90,
+  "initialRows": 20,
+  "profiles": {
+    "defaults": {
+      "colorScheme": "shades-of-purple",
+      "font": {
+        "face": "MesloLGL NF",
+        "size": 8
+      }
+    },
+    "list": [
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Command Prompt"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      },
+      {
+        "guid": "{2fd01792-38c4-553b-9c1d-9004049de452}",
+        "hidden": false,
+        "name": "Developer Command Prompt for VS 2017",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+        "hidden": false,
+        "name": "Git Bash",
+        "source": "Git"
+      },
+      {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "hidden": false,
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#000000",
+      "black": "#000000",
+      "blue": "#6943FF",
+      "brightBlack": "#686868",
+      "brightBlue": "#6871FF",
+      "brightCyan": "#79E8FB",
+      "brightGreen": "#43D426",
+      "brightPurple": "#FF77FF",
+      "brightRed": "#F92A1C",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#F1D000",
+      "cursorColor": "#FAD000",
+      "cyan": "#00C5C7",
+      "foreground": "#FFFFFF",
+      "green": "#3AD900",
+      "name": "shades-of-purple",
+      "purple": "#FF2C70",
+      "red": "#D90429",
+      "selectionBackground": "#B362FF",
+      "white": "#C7C7C7",
+      "yellow": "#FFE700"
+    }
+  ]
+}
